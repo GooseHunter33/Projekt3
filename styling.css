@@ -11,7 +11,16 @@ header{
     text-align: center;
 
 }
-nav{
+nav li {
     display: flex;
     justify-content: center;
+}
+
+footer{
+    font-size: 2vh;
+    background-color: darkblue;
+    color: lightblue;
+    text-align: center;
+    
+
 }
