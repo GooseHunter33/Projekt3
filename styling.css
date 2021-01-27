@@ -1,26 +1,32 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
 
-header{
-    font-size: 3vh;
-    background-color: darkblue;
-    color: lightblue;
-    text-align: center;
-
+header {
+  font-size: 3vh;
+  background-color: darkblue;
+  color: lightblue;
+  text-align: center;
 }
 nav li {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-footer{
-    font-size: 2vh;
-    background-color: darkblue;
-    color: lightblue;
-    text-align: center;
-    
+.spelPlanen {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.spelPlanen :hover {
+  color: black;
+}
 
+footer {
+  font-size: 2vh;
+  background-color: darkblue;
+  color: lightblue;
+  text-align: center;
 }
