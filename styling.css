@@ -19,9 +19,36 @@ nav li {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  border: 1px black solid;
+  margin: 10em;
 }
-.spelPlanen :hover {
-  color: black;
+
+.spelPlanen div
+{
+
+  border: 1px solid green;
+  background-color: lime;
+
+  width: 5vh;
+  height: 5vh; 
+}
+
+.spelPlanen div :hover {
+  background-color: black;
+}
+
+.container1{
+    display: flex;
+    justify-content: end;
+}
+
+.rules{
+    display: flex;
+    justify-content: center;
+    border:5px solid black;
+    margin: 5em;
+    height: 20em;
+    width: 15em;
 }
 
 footer {
