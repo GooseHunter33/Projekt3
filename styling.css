@@ -39,16 +39,34 @@ nav li {
 
 .container1{
     display: flex;
-    justify-content: end;
+    width: 50%;
+    border: 5px black solid;
+    
 }
 
-.rules{
+.textContainer{
+  
     display: flex;
-    justify-content: center;
-    border:5px solid black;
-    margin: 5em;
-    height: 20em;
-    width: 15em;
+    font-size: 5vh;
+    flex-direction: column;
+   
+    
+    height: 55vh;
+    width: 35vh;
+}
+.topContainer{
+  display: flex;
+justify-content: center;
+
+}
+.img{
+  
+    height: 55vh;
+    width: 35vh;
+    border: 5px black solid;
+}
+.container2{
+  padding-top: 200px;
 }
 
 footer {
