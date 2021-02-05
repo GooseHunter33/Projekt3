@@ -4,6 +4,10 @@
   border: 0px;
 }
 
+ul{
+  list-style: none;
+}
+
 header {
   font-size: 3vh;
   background-color: darkblue;
@@ -13,6 +17,12 @@ header {
 nav li {
   display: flex;
   justify-content: center;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: orange;
 }
 
 .spelPlanen {
@@ -40,30 +50,50 @@ nav li {
 
 .topContainer{
 display: flex;
-flex-direction: column;
-flex-wrap: wrap; /* fråga Sebastian varför den inte wrapar*/
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+ /* fråga Sebastian varför den inte wrapar*/
 }
 
 .RulesText{
-  display: flex;
-    justify-content: space-around;
 
-  margin-bottom: 50px;
   margin-top: 20px;
-  
+  width: 50%;
+  border: 5px solid green;  
+
 }
-.Text{
-   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+
+.RulesText ul{
   
+  font-size: 25px;
+  margin-left:8vh;
 }
+
+.RulesText h2{
+  display: flex;
+  justify-content: center;
+}
+
 .img-container{
-width: 50%;
+
+width: 40%;
+height: 40%;
 
 
+  
+}
 
-  border: 5px black solid;
+.img-containerOrder{
+  order: -1;
+width: 40%;
+height: 40%;
+
+}
+.img-containerOrder img{
+  width: 100%;
+  height: 100%;
 }
 .img-container img{
   width: 100%;
@@ -108,4 +138,64 @@ footer {
   background-color: darkblue;
   color: lightblue;
   text-align: center;
+}
+
+
+@media (max-width:600px){
+  .topContainer{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+ /* fråga Sebastian varför den inte wrapar*/
+}
+
+.RulesText{
+
+  margin-top: 20px;
+  width: 50%;
+  border: 5px solid green;  
+
+}
+
+.RulesText ul{
+  
+  font-size: 25px;
+  margin-left:5vh;
+  margin-right: 2vh;
+}
+
+.RulesText h2{
+  display: flex;
+  justify-content: center;
+}
+
+
+.img-container{
+  order: -1;
+width: 60%;
+height: 40%;
+margin-top: 25px;
+
+  
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.img-containerOrder{
+  order: -1;
+width: 60%;
+height: 40%;
+margin-top: 25px;
+
+
+}
+.img-containerOrder img{
+  width: 100%;
+  height: 100%;
+}
+
 }
