@@ -19,15 +19,25 @@ header {
   color: lightblue;
   text-align: center;
 }
-nav li {
+nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+padding-bottom: 20px;
+padding-top: 20px;
 
 }
 
 nav a{
   text-decoration: none;
   color: orange;
+  border: black 2.5px solid;
+  padding: 2.5px ;
+  
+}
+
+nav ul :hover{
+  font-size:5vh;
 }
 
 .spelPlanen {
@@ -168,11 +178,30 @@ justify-content: center;
 }
 */
 footer {
+  margin-top:60px ;
+  
   font-size: 2vh;
   background-color: darkblue;
   color: lightblue;
   text-align: center;
+  padding-bottom: 20px;
 }
+
+.mainFoot{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+
+.icon {
+width: 4%;
+height: 4%;
+}
+
 
 
 @media (max-width:600px){
@@ -183,6 +212,11 @@ align-items: center;
 flex-wrap: wrap;
 
  /* fråga Sebastian varför den inte wrapar*/
+}
+
+.icon {
+width: 10%;
+height: 10%;
 }
 
 .RulesText{
