@@ -144,6 +144,51 @@ height: 40%;
  
 }
 
+.block{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.Scriptum{
+  width: 40ch;
+  line-height: 1.5;
+}
+
+.HistoryText{
+  
+  height: 500px;
+  width: 500px;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top:20px ;
+  text-align: center;
+  border: 2.5px black solid;
+  overflow: scroll;
+  background-color: lightblue;
+
+}
+
+
+
+.Scroll-Container{
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+.Scroll{
+text-align: end;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+}
+
+
 /*
 .container1{
     display: flex;
@@ -189,13 +234,16 @@ footer {
 
 .mainFoot{
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  
 
 }
 
-
+.about{
+  background-color: black;
+}
 
 .icon {
 width: 4%;
