@@ -4,12 +4,36 @@
   border: 0px;
 }
 
-.Center{
+.container-main {
+  display: flex;
+
+  justify-content: center;
+  margin: 100px;
+}
+.skepp-grid {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr;
+  
+}
+
+.skepp-grid button {
+
+  background-color: blue;
+  border: black 2.5px solid;
+}
+.skepp-grid button:hover{
+  background-color: red;
+}
+
+.Center {
   margin-top: 10px;
   text-align: center;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -23,21 +47,19 @@ nav ul {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-padding-bottom: 20px;
-padding-top: 20px;
-
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: orange;
   border: black 2.5px solid;
-  padding: 2.5px ;
-  
+  padding: 2.5px;
 }
 
-nav ul :hover{
-  font-size:5vh;
+nav ul :hover {
+  font-size: 5vh;
 }
 
 .spelPlanen {
@@ -48,103 +70,87 @@ nav ul :hover{
   margin: 10em;
 }
 
-.spelPlanen div
-{
-
+.spelPlanen div {
   border: 1px solid green;
   background-color: lime;
 
   width: 5vh;
-  height: 5vh; 
+  height: 5vh;
 }
 
 .spelPlanen div :hover {
   background-color: black;
 }
 
+.topContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-.topContainer{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-
- /* fråga Sebastian varför den inte wrapar*/
+  /* fråga Sebastian varför den inte wrapar*/
 }
 
-.RulesText{
-
+.RulesText {
   margin-top: 20px;
   width: 50%;
-
-
 }
 
-.RulesText ul{
-  
+.RulesText ul {
   font-size: 25px;
-  margin-left:8vh;
+  margin-left: 8vh;
 }
 
-.RulesText h2{
+.RulesText h2 {
   display: flex;
   justify-content: center;
 }
 
-.img-container{
-
-width: 40%;
-height: 40%;
-
-
-  
+.img-container {
+  width: 40%;
+  height: 40%;
 }
 
-.img-containerOrder{
+.img-containerOrder {
   order: -1;
-width: 40%;
-height: 40%;
-
+  width: 40%;
+  height: 40%;
 }
-.img-containerOrder img{
+.img-containerOrder img {
   width: 100%;
   height: 100%;
 }
-.img-container img{
+.img-container img {
   width: 100%;
   height: 100%;
 }
 
-.quote{
+.quote {
   font-size: 39px;
-  font-style:italic;
+  font-style: italic;
   text-align: center;
 }
 
-.Bildgalleri{
+.Bildgalleri {
   display: flex;
   flex-direction: row;
-  justify-content:center;
-
+  justify-content: center;
 }
 
-.Galleri-container{
+.Galleri-container {
   width: 50%;
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap-reverse;
   border: 5px solid black;
   background-color: black;
-
-
 }
-.Galleri-container img{
+.Galleri-container img {
   width: 50%;
- 
 }
 
-.block{
+.block {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -154,40 +160,35 @@ height: 40%;
   margin-top: 100px;
 }
 
-.Scriptum{
+.Scriptum {
   width: 40ch;
   line-height: 1.5;
 }
 
-.HistoryText{
-  
+.HistoryText {
   height: 500px;
   width: 500px;
   margin-right: 150px;
   margin-left: 150px;
-  margin-top:20px ;
+  margin-top: 20px;
   text-align: center;
   border: 2.5px black solid;
   overflow: scroll;
   background-color: lightblue;
-
 }
 
-
-
-.Scroll-Container{
+.Scroll-Container {
   display: flex;
   justify-content: center;
   background-color: blue;
 }
 
-.Scroll{
-text-align: end;
+.Scroll {
+  text-align: end;
   height: 100px;
   width: 100px;
   overflow: scroll;
 }
-
 
 /*
 .container1{
@@ -223,122 +224,136 @@ justify-content: center;
 }
 */
 footer {
-  margin-top:60px ;
-  
+  margin-top: 60px;
+
   font-size: 2vh;
-  background-color: darkblue;
+  background-color: black;
   color: lightblue;
   text-align: center;
   padding-bottom: 20px;
+  
 }
+.find a {
+font-size: 1.5rem;
+ color: black;
 
-.mainFoot{
-
+ 
+}
+.mainFoot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
-  
-
+  background-color: darkblue;
 }
 
-.about{
+.about {
   background-color: black;
+  
+   
+}
+.about a{
+  font-size: 1.4rem;
+  color: blue;
+  
+}
+
+.contact{
+  
 }
 
 .icon {
-width: 4%;
-height: 4%;
+  width: 4%;
+  height: 4%;
 }
 
+@media (max-width: 600px) {
 
-
-@media (max-width:600px){
-  .topContainer{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-
- /* fråga Sebastian varför den inte wrapar*/
-}
-
-.icon {
-width: 10%;
-height: 10%;
-}
-
-.RulesText{
-
-  margin-top: 20px;
-  
-  width: 50%;
-  border: 5px solid black;  
-  text-align: center;
-
-}
-
-.RulesText ul{
-  
-  font-size: 25px;
-  
-  margin-left:3vh;
-  margin-right: 2vh;
+.skepp-grid {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr;
   
 }
 
-.RulesText h2{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+.container-main{
+  margin: 0px;
+  margin-top: 50px;
 }
 
 
-.img-container{
-  order: -1;
-width: 60%;
-height: 40%;
-margin-top: 25px;
+  .topContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-  
-}
-.img-container img{
-  width: 100%;
-  height: 100%;
-}
+    /* fråga Sebastian varför den inte wrapar*/
+  }
 
-.img-containerOrder{
-  order: -1;
-width: 60%;
-height: 40%;
-margin-top: 25px;
+  .icon {
+    width: 10%;
+    height: 10%;
+  }
 
+  .RulesText {
+    margin-top: 20px;
 
+    width: 50%;
+    border: 5px solid black;
+    text-align: center;
+  }
 
-}
-.img-containerOrder img{
-  width: 100%;
-  height: 100%;
-}
+  .RulesText ul {
+    font-size: 25px;
 
-.Bildgalleri{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
+    margin-left: 3vh;
+    margin-right: 2vh;
+  }
 
-}
+  .RulesText h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 
-.Galleri-container{
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  flex-wrap: wrap-reverse;
+  .img-container {
+    order: -1;
+    width: 60%;
+    height: 40%;
+    margin-top: 25px;
+  }
+  .img-container img {
+    width: 100%;
+    height: 100%;
+  }
 
+  .img-containerOrder {
+    order: -1;
+    width: 60%;
+    height: 40%;
+    margin-top: 25px;
+  }
+  .img-containerOrder img {
+    width: 100%;
+    height: 100%;
+  }
 
-}
-.Galleri-container img{
-  width: 100%;
- margin-top: 10px;
-}
+  .Bildgalleri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
+  .Galleri-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .Galleri-container img {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
