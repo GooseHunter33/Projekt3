@@ -2,6 +2,11 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
+
+}
+
+.color{
+  background-color: darkorange;
 }
 
 .container-main {
@@ -239,6 +244,7 @@ font-size: 1.5rem;
 
  
 }
+
 .mainFoot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -256,9 +262,7 @@ font-size: 1.5rem;
   
 }
 
-.contact{
-  
-}
+
 
 .icon {
   width: 4%;
