@@ -5,7 +5,24 @@
 
 }
 
-.color{
+.miss-button{
+  background-color: darkred;
+}
+
+#tries{
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+#bombs{
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.hit-button{
   background-color: darkorange;
 }
 
@@ -19,14 +36,12 @@
   width: 400px;
   height: 400px;
   display: grid;
-  grid-template-columns:1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr;
+
   
 }
 
 .skepp-grid button {
 
-  background-color: blue;
   border: black 2.5px solid;
 }
 .skepp-grid button:hover{
@@ -250,6 +265,9 @@ font-size: 1.5rem;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: darkblue;
 }
+.bottom-footer{
+  margin-top: 20px;
+}
 
 .about {
   background-color: black;
@@ -275,9 +293,18 @@ font-size: 1.5rem;
   width: 300px;
   height: 300px;
   display: grid;
-  grid-template-columns:1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr;
+ 
   
+}
+
+.block {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
 }
 
 .container-main{
