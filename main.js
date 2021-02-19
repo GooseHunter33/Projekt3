@@ -55,6 +55,7 @@ function testLocation(event) {
 
   if (battlefield[x][y] != 1) {
     console.log("No ship");
+    
      wrongs-- ;
     // tries(10);
 

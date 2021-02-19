@@ -79,7 +79,7 @@ nav a {
 }
 
 nav ul :hover {
-  font-size: 5vh;
+  background-color: dimgray;
 }
 
 .spelPlanen {
@@ -210,39 +210,7 @@ nav ul :hover {
   overflow: scroll;
 }
 
-/*
-.container1{
-    display: flex;
-    width: 50%;
-    border: 5px black solid;
-    
-}
 
-.textContainer{
-  
-    display: flex;
-    font-size: 5vh;
-    flex-direction: column;
-   
-    
-    height: 55vh;
-    width: 35vh;
-}
-.topContainer{
-  display: flex;
-justify-content: center;
-
-}
-.img{
-  
-    height: 55vh;
-    width: 35vh;
-    border: 5px black solid;
-}
-.container2{
-  padding-top: 200px;
-}
-*/
 footer {
   margin-top: 60px;
 
@@ -386,5 +354,13 @@ font-size: 1.5rem;
   .Galleri-container img {
     width: 100%;
     margin-top: 10px;
+    
   }
+.about ul li a{
+  font-size: 19px;
+  
+}
+.about ul li{
+  margin: 9px;
+}
 }
