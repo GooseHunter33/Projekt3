@@ -89,23 +89,6 @@ alert("GRATTIS du har lyckats träffa alla skepp, klappa dig själv på axeln. S
 
 
 
-/*
-Vill att denna funktion ska räkna antalet gånger man klickat fel o sedan skicka en popup som säger att dina fel är för många
-Och sedan starta om sidan, men nu är wrongs odefinireat och dessutom så tror jag inte att den räknar rätt i trielocation loopen
-bör man istället ha tries utanför loopen, men hur ska man då connecta den för varje fel man gör när man klickar i testlocation?
 
-Har försökt att skriva ut en ny färg för varje knapp man trycker på men det funkar inte heller. Då den inte låter mig att byta attribut(setattribute) 
-som man tidigare gjorde på "Newbutton".
-
-
-    function tries(antal) {
-      var wrongs = 0;
-      if (wrongs <= antal) {
-        alert("du har överskridit försöken, vänligen starta om");
-        document.location.reload();
-      }
-    }
-*/
-//} hör ihop med for loopen
 
 generateBoard(8, 8, 10);
